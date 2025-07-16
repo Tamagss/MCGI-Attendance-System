@@ -40,7 +40,7 @@ namespace MCGI_Attendance_System
             openFolder.Filter = "Image Files (*jpg)|*.jpg|All Files(*.*)|*.*";
             openFolder.FilterIndex = 1;
 
-            if (openFolder.ShowDialog() == DialogResult.OK) 
+            if (openFolder.ShowDialog() == DialogResult.OK)
             {
                 pictBoxReg.Image = new Bitmap(openFolder.FileName);
                 Console.WriteLine(openFolder.FileName);
@@ -57,6 +57,7 @@ namespace MCGI_Attendance_System
             string churchID = txtChuchID.Text;
             string churchStatus = txtChurchStatus.Text;
             string fullPath = "";
+            string newFileName = "";
 
             if (File.Exists(imageFilePath))
             {
@@ -76,7 +77,7 @@ namespace MCGI_Attendance_System
                 //Build a unique filename
                 string ext = Path.GetExtension(imageFilePath); // e.g. ".jpg"
 
-                string newFileName = $"{fullName}{ext}";
+                newFileName = $"{fullName}{ext}";
 
                 fullPath = Path.Combine(imagesFolder, newFileName);
 
@@ -95,7 +96,28 @@ namespace MCGI_Attendance_System
             }
 
             CRUD insert = new CRUD();
-            insert.InsertDataReg(id, fullName, dateOfBirth, dateOfBaptism, churchID, churchStatus, fullPath);
+
+            DialogResult result = MessageBox.Show("Are you sure to save this information?", "Confirmation", MessageBoxButtons.YesNo);
+
+            if (result == DialogResult.Yes)
+            {
+                insert.InsertDataReg(id, fullName, dateOfBirth, dateOfBaptism, churchID, churchStatus, newFileName);
+                ClearData();
+
+                MessageBox.Show("Record saved successfully!");
+            }
+        }
+
+            public void ClearData()
+            {
+                txtMemberID.Clear();
+                txtFullName.Clear();    
+                dtpDateofBirth.Value = DateTime.Now;
+                dtpDateOfBaptism.Value = DateTime.Now;
+                txtChuchID.Clear();
+                txtChurchStatus.Clear();
+                pictBoxReg.Image = null;
+                imageFilePath = string.Empty; // Reset the image file path
+            }
         }
     }
-}

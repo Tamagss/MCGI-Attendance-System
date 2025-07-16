@@ -21,3 +21,26 @@ D:\Coding Project\MCGI Attendance System\obj\Debug\MCGI Attendance System.exe.co
 D:\Coding Project\MCGI Attendance System\obj\Debug\MCGI_Attendance_System.AttendanceRecord.resources
 D:\Coding Project\MCGI Attendance System\obj\Debug\MCGI_Attendance_System.ScanAttendance.resources
 D:\Coding Project\MCGI Attendance System\obj\Debug\MCGI_Attendance_System.RegisterMember.resources
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\MCGI Attendance System.exe.config
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\MCGI Attendance System.exe
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\MCGI Attendance System.pdb
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\EntityFramework.dll
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\System.Data.SQLite.dll
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\EntityFramework.xml
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\bin\Debug\System.Data.SQLite.xml
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.csproj.AssemblyReference.cache
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.exe.config
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.AttendanceRecord.resources
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.Login.resources
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.Properties.Resources.resources
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.RegisterMember.resources
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.ScanAttendance.resources
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.csproj.GenerateResource.cache
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.csproj.CoreCompileInputs.cache
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Att.6D23E102.Up2Date
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.exe
+C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.pdb
