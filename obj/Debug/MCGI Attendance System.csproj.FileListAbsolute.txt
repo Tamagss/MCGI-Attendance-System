@@ -44,3 +44,26 @@ C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Attend
 C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Att.6D23E102.Up2Date
 C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.exe
 C:\Users\glenn\source\repos\Tamagss\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.pdb
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\MCGI Attendance System.exe.config
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\MCGI Attendance System.exe
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\MCGI Attendance System.pdb
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\EntityFramework.dll
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\EntityFramework.SqlServer.dll
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\System.Data.SQLite.dll
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\EntityFramework.xml
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\EntityFramework.SqlServer.xml
+D:\Coding Project\MCGI-Attendance-System\bin\Debug\System.Data.SQLite.xml
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.csproj.AssemblyReference.cache
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.exe.config
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.AttendanceRecord.resources
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.Login.resources
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.Properties.Resources.resources
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.RegisterMember.resources
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI_Attendance_System.ScanAttendance.resources
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.csproj.GenerateResource.cache
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.csproj.CoreCompileInputs.cache
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI Att.6D23E102.Up2Date
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.exe
+D:\Coding Project\MCGI-Attendance-System\obj\Debug\MCGI Attendance System.pdb
