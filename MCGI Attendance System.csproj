@@ -92,6 +92,12 @@
     <Compile Include="ScanAttendance.Designer.cs">
       <DependentUpon>ScanAttendance.cs</DependentUpon>
     </Compile>
+    <Compile Include="Update Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Information.Designer.cs">
+      <DependentUpon>Update Information.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AttendanceRecord.resx">
       <DependentUpon>AttendanceRecord.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ScanAttendance.resx">
       <DependentUpon>ScanAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Information.resx">
+      <DependentUpon>Update Information.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

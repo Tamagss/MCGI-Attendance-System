@@ -42,6 +42,14 @@ namespace MCGI_Attendance_System
             CRUD crud = new CRUD();
             DataTable filteredTable = crud.DisplayFilteredData(from, to);
             dataGridView.DataSource = filteredTable;
+
+            if (filteredTable.Rows.Count == 0)
+            {
+                MessageBox.Show("No records found for the selected date range.");
+                DisplayAllRecords();
+                return;
+            }
+
             dataGridView.Update();
             dataGridView.Refresh();
         }
@@ -86,6 +94,31 @@ namespace MCGI_Attendance_System
             dtpTo.Value = DateTime.Today;
         }
 
+        private void SearchRecords()
+        {
+            CRUD crud = new CRUD();
+            string searchTerm = txtSearch.Text.Trim();
+
+            if (string.IsNullOrEmpty(searchTerm))
+            {
+                MessageBox.Show("Please enter a search term.");
+                DisplayAllRecords();
+                return;
+            }
+
+            DataTable filteredTable = crud.SearchData(searchTerm);
+            dataGridView.DataSource = filteredTable;
+            dataGridView.Update();
+            dataGridView.Refresh();
+
+            if (filteredTable.Rows.Count == 0)
+            {
+                DisplayAllRecords();
+                MessageBox.Show("No records found.");
+                return;
+            }
+        }
+
         private void AttendanceRecord_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -101,6 +134,32 @@ namespace MCGI_Attendance_System
             this.Hide();
             RegisterMember registerForm = new RegisterMember();
             registerForm.Show();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SearchRecords();
+        }
+
+        private void txtSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                SearchRecords();
+            }
+        }
+
+        private void btnEditData_Click(object sender, EventArgs e)
+        {
+            if (dataGridView.SelectedRows.Count > 0)
+            {
+                DataGridViewRow row = dataGridView.SelectedRows[0];
+                Console.WriteLine(row.Cells["id"].Value);
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to edit.");
+            }
         }
     }
 }
