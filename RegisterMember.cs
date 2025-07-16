@@ -59,6 +59,14 @@ namespace MCGI_Attendance_System
             string fullPath = "";
             string newFileName = "";
 
+            string dateToday = DateTime.Today.ToString("yyyy-MM-dd");
+
+            if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(fullName) || string.IsNullOrWhiteSpace(churchID) || string.IsNullOrWhiteSpace(churchStatus) || dateOfBirth == dateToday || dateOfBaptism == dateToday)
+            {
+                MessageBox.Show("Please fill in all required fields.");
+                return;
+            }
+
             if (File.Exists(imageFilePath))
             {
                 string exePath = AppDomain.CurrentDomain.BaseDirectory;
