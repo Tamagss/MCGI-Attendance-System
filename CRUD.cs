@@ -161,5 +161,37 @@ namespace MCGI_Attendance_System
                 }
             }
         }
+
+        public DataTable SearchData(string keyword)
+        {
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string selectQuery = "SELECT * FROM MemberAttendance WHERE " +
+                    "Id LIKE @id OR " +
+                    "name LIKE @name COLLATE NOCASE OR " +
+                    "date LIKE @date COLLATE NOCASE OR " +
+                    "typeofservice LIKE @typeofservice COLLATE NOCASE OR " +
+                    "locale LIKE @locale COLLATE NOCASE OR " +
+                    "churchid LIKE @churchid COLLATE NOCASE";
+
+                using (var command = new SQLiteCommand(selectQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@id", $"%{keyword}%");
+                    command.Parameters.AddWithValue("@name", $"%{keyword}%");
+                    command.Parameters.AddWithValue("@date", $"%{keyword}%");
+                    command.Parameters.AddWithValue("@typeofservice", $"%{keyword}%");
+                    command.Parameters.AddWithValue("@locale", $"%{keyword}%");
+                    command.Parameters.AddWithValue("@churchid", $"%{keyword}%");
+
+                    using (var adapter = new SQLiteDataAdapter(command))
+                    {
+                        DataTable table = new DataTable();
+                        adapter.Fill(table); // Fills DataTable with query result
+                        return table;
+                    }
+                }
+            }
+        }
     }
 }
